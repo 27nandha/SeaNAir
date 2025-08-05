@@ -224,6 +224,19 @@ img {
   overflow: hidden;
   padding-top: 70px;
 }
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav__link {
+    padding-inline: 1rem;
+  }
+
+  .hero-banner {
+    background: url("/assets/img/two.jpeg") center/cover no-repeat;
+  }
+}
 
 .hero-banner::before {
   content: "";
@@ -616,15 +629,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
-  .container {
-    margin-inline: 1rem;
-  }
 
-  .nav__link {
-    padding-inline: 1rem;
-  }
-}
 
 /* For mobile devices */
 @media (max-width: 768px) {
@@ -644,7 +649,9 @@ img {
   }
 
   .services-overview {
-    padding: 70px 20px;
+    padding: 0px 20px;
+    padding-top: 20px;
+    padding-bottom: 70px;
   }
 
   .services-overview h2 {
@@ -667,20 +674,24 @@ img {
   .vm-container {
     flex-direction: column;
   }
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    width: 180px;
+  }
 }
 
 @media (max-width: 480px) {
   .about-section {
-    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 0px;
   }
 
   .about-header {
     margin-bottom: 60px;
   }
 
-  .services-overview {
-    margin-top: 60px;
-  }
 
   .about-header h2 {
     font-size: 1.8rem;
@@ -702,11 +713,7 @@ img {
     font-size: 1rem;
   }
 
-  .btn-primary,
-  .btn-secondary {
-    padding: 12px 25px;
-    font-size: 0.9rem;
-  }
+  
 }
 
 /* For large devices */
