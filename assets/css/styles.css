@@ -235,7 +235,8 @@ img {
   .nav__link {
     padding-inline: 1rem;
   }
-
+}
+@media screen and (max-width: 480px) {
   .hero-banner {
     background: url("/assets/img/two.jpeg") center/cover no-repeat;
   }
