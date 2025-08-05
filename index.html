@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Dropdown Menu</title>
+
+    <!-- Remixicon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="logo.jpeg" alt="Logo" class="logo-img" />
+            <div>
+              SeaNAir
+              <span class="logo-sub">small Connect LLC</span>
+            </div>
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#whyus" class="nav__link">Why Us</a></li>
+
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-banner" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Your Silent Partner in Smart Logistics</h1>
+          <p>
+            We specialize in backend support for freight forwarders, 3PLs, and
+            logistics companies worldwide. Whether you're managing shipments,
+            documentation, or customer service — we do the heavy lifting behind
+            the scenes so you can deliver excellence on the front end.
+          </p>
+          <div class="hero-buttons">
+            <a href="#get-started" class="btn-primary">Get a Quote</a>
+            <a href="#free-trial" class="btn-secondary">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-image"></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <!-- Main About Content -->
+        <div class="about-header">
+          <h2>Behind Every Shipment, There's a Strong Support</h2>
+          <p>
+            Based in the United States, our company provides backend logistics
+            support services to logistics providers across the globe. Whether
+            you're a freight forwarder needing dispatch assistance, an
+            e-commerce brand managing multiple orders, or a warehouse looking
+            for virtual admin support, we deliver accurate, efficient, and
+            tech-enabled solutions tailored to your business.
+          </p>
+        </div>
+
+        <!-- Key Statistics -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2c3e50"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 11H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2M9 11V9a2 2 0 1 1 4 0v2M9 11h6"
+                />
+                <polyline points="9,11 9,16" />
+                <polyline points="15,11 15,16" />
+              </svg>
+            </div>
+            <h3>24/7 Dedicated</h3>
+            <p>Support Team</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2c3e50"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+                <path d="M8 12l8 0" />
+              </svg>
+            </div>
+            <h3>U.S.-Based</h3>
+            <p>with Global Reach</p>
+          </div>
+
+          <div class="stat-card highlight">
+            <div class="stat-number">99.8%</div>
+            <h3>99.8% Accuracy</h3>
+            <p>Rate in Documentation</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2c3e50"
+                stroke-width="2"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="8.5" cy="7" r="4" />
+                <path d="M20 8v6" />
+                <path d="M23 11h-6" />
+              </svg>
+            </div>
+            <h3>Flexible and</h3>
+            <p>Scalable Workforce</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Services Overview -->
+      <!-- Services Overview -->
+      <section class="services-overview" id="services">
+        <h2>Our Services</h2>
+        <p class="services-tagline">Reliable. Scalable. Affordable.</p>
+
+        <div class="services-icon-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-truck-line"></i>
+            </div>
+            <h3 class="service-title">Shipment Tracking & Updates</h3>
+            <p class="service-desc">
+              Real-time backend support to monitor shipments and update your
+              clients.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-file-list-3-line"></i>
+            </div>
+            <h3 class="service-title">Documentation & Compliance</h3>
+            <p class="service-desc">
+              We handle bill of lading, invoices, packing lists, customs
+              clearance, and more.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-customer-service-2-line"></i>
+            </div>
+            <h3 class="service-title">Customer Support</h3>
+            <p class="service-desc">
+              Email and chat support tailored to your freight forwarding needs.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-database-line"></i>
+            </div>
+            <h3 class="service-title">Data Entry & CRM Updates</h3>
+            <p class="service-desc">
+              Accurate, efficient backend data handling to keep your systems
+              up-to-date.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-road-map-line"></i>
+            </div>
+            <h3 class="service-title">Carrier Coordination</h3>
+            <p class="service-desc">
+              Behind-the-scenes communication with shipping lines, airlines, and
+              truckers.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="why-choose-us" id="whyus">
+        <h2>Why Choose Us?</h2>
+        <ul class="why-us-list">
+          <li>
+            <span class="why-icon"><i class="ri-box-3-line"></i></span>
+            <span class="why-text"
+              ><strong>Logistics Experts</strong> – Deep domain knowledge in
+              freight forwarding and global logistics.</span
+            >
+          </li>
+          <li>
+            <span class="why-icon"><i class="ri-briefcase-line"></i></span>
+            <span class="why-text"
+              ><strong>White-Label Service</strong> – We operate under your
+              brand while you focus on growth.</span
+            >
+          </li>
+          <li>
+            <span class="why-icon"><i class="ri-time-line"></i></span>
+            <span class="why-text"
+              ><strong>24/7 Availability</strong> – Global time zone support to
+              meet your operational needs.</span
+            >
+          </li>
+          <li>
+            <span class="why-icon"
+              ><i class="ri-money-dollar-circle-line"></i
+            ></span>
+            <span class="why-text"
+              ><strong>Cost-Effective</strong> – Save up to 60% compared to
+              in-house backend teams.</span
+            >
+          </li>
+          <li>
+            <span class="why-icon"><i class="ri-lock-line"></i></span>
+            <span class="why-text"
+              ><strong>Confidential & Secure</strong> – GDPR-compliant,
+              NDA-backed operations.</span
+            >
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section class="vision-mission-section" id="vision-mission">
+      <h2>Our Vision & Mission</h2>
+      <div class="vm-container">
+        <div class="vm-card">
+          <h3>Vision</h3>
+          <p>
+            To become the world's most trusted backend logistics partner for
+            freight and cargo businesses.
+          </p>
+        </div>
+        <div class="vm-card">
+          <h3>Mission</h3>
+          <p>
+            To empower logistics companies with seamless backend operations that
+            drive efficiency, accuracy, and client satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="work-together-section" id="contact">
+      <div class="work-container">
+        <h2>Let’s Work Together</h2>
+        <p>
+          Whether you're a freight forwarder, NVOCC, or 3PL provider — we’re
+          ready to support your backend needs.
+        </p>
+        <a href="#contact-form" class="cta-button">Get in Touch</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>SeaNAir small Connect LLC</h3>
+          <p>
+            Your trusted backend support partner in freight forwarding and
+            logistics.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="ri-phone-line"></i> +91 98765 43210</p>
+          <p><i class="ri-mail-line"></i> support@seaNAir.com</p>
+          <p><i class="ri-map-pin-line"></i> Chennai, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="ri-facebook-line"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-linkedin-line"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 RedBack. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
