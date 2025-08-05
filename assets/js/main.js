@@ -1,13 +1,18 @@
-const showMenu = (toggleId, navId) => {
-  const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId);
+const toggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-menu");
 
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show-menu");
-      toggle.classList.toggle("show-icon");
-    });
-  }
-};
+// Toggle the menu on burger click
+toggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show-menu");
+  toggle.classList.toggle("show-icon");
+});
 
-showMenu("nav-toggle", "nav-menu");
+// Close the menu when any nav link is clicked
+const navLinks = document.querySelectorAll(".nav__link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+    toggle.classList.remove("show-icon");
+  });
+});
