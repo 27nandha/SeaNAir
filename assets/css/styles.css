@@ -228,7 +228,7 @@ img {
 /*=============== HERO BANNER ===============*/
 .hero-banner {
   height: 100vh;
-  background: url("/assets/img/one.jpeg") center/cover no-repeat;
+  background: url("/assets/img/one.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   color: white;
@@ -247,7 +247,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero-banner {
-    background: url("/assets/img/two.jpeg") center/cover no-repeat;
+    background: url("/assets/img/two.webp") center/cover no-repeat;
   }
 }
 
